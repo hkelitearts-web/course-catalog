@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>課程目錄 | 你的公司名稱</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>課程目錄</h1>
+    <p>選擇適合你的課程，立即預約</p>
+  </header>
+
+  <!-- 篩選區 -->
+  <section class="filters">
+    <div class="filter-group">
+      <span>形式：</span>
+      <button class="filter-btn active" data-filter="type" data-value="all">全部</button>
+      <button class="filter-btn" data-filter="type" data-value="線上">線上</button>
+      <button class="filter-btn" data-filter="type" data-value="線下">線下</button>
+    </div>
+
+    <div class="filter-group">
+      <span>類別：</span>
+      <button class="filter-btn active" data-filter="category" data-value="all">全部</button>
+      <!-- 類別按鈕會由 JavaScript 自動產生 -->
+      <div id="category-buttons"></div>
+    </div>
+
+    <div class="filter-group">
+      <span>老師：</span>
+      <button class="filter-btn active" data-filter="teacher" data-value="all">全部</button>
+      <!-- 老師按鈕會由 JavaScript 自動產生 -->
+      <div id="teacher-buttons"></div>
+    </div>
+  </section>
+
+  <!-- 課程卡片區 -->
+  <section id="course-list" class="course-grid">
+    <!-- 課程卡片會由 JavaScript 自動產生 -->
+  </section>
+
+  <footer>
+    <p>© 你的公司名稱 | <a href="https://你的主網站.com">返回主網站</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
